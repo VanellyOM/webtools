@@ -1,11 +1,112 @@
+// <weight>: Use a value from 300 to 900
+// <uniquifier>: Use a unique and descriptive class name
+
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap'); 
+.sansita-swashed-example {
+  font-family: "Sansita Swashed", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:"Sansita Swashed", system-ui, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2daf7;
-    color: rgb (#301934);
+    background-color: #f4f4f4;
+    color: rgb(57, 57, 57);
+    line-height: 1.5;
+}
+
+header {
+    background: linear-gradient(to top center, #d4e4f7 0%, #501b8d 100%);
+    /* background: #35424a; */
+    padding: .5rem 0;
+    text-align: center;
 }
 
 main {
-    padding: 20px;
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    background: #3c0e4e;
+    color: #F2F7FD;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+footer > p {
+    color:#d4f7df;
+}
+
+h1 {
+    color: #0e3a4e;
+    font-family: "Sansita Swashed", system-ui, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #7a03a8;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1.125rem;
+}
+
+p {
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+    color: #410101;
+    line-height: 1.6;
+}
+
+a:link,
+a:visited {
+    color: #1b8d67;
+}
+
+a:hover {
+    color: #4e4d0e;
+}
+
+a:active {
+    color: rgb(25, 0, 139);
+}
+
+.nav-link:link,
+.nav-link:visited {
+    color: #c307fc;
+}
+
+.nav-link:hover {
+    color: #b1f8c1;
+}
+
+.nav-link:active {
+    color: #f1ddf7;
 }
