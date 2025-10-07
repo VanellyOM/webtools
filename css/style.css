@@ -1,10 +1,8 @@
-// <weight>: Use a value from 300 to 900
-// <uniquifier>: Use a unique and descriptive class name
 
-@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;700;900&display=swap'); 
+
 .sansita-swashed-example {
-  font-family: "Sansita Swashed", system-ui;
-  font-optical-sizing: auto;
+  font-family: "Sansita Swashed", system-ui, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -19,8 +17,6 @@ body {
 }
 
 header {
-    background: linear-gradient(to top center, #d4e4f7 0%, #501b8d 100%);
-    /* background: #35424a; */
     padding: .5rem 0;
     text-align: center;
 }
@@ -51,7 +47,7 @@ h1 {
     font-size: 3rem;
 }
 
-h2, h3, h4, h5, h6 {
+h2, h3, h4{
     color: #7a03a8;
     font-family:'Times New Roman', Times, serif;
     margin-top: 1rem;
@@ -68,14 +64,6 @@ h3 {
 
 h4 {
     font-size: 1.5rem;
-}
-
-h5 {
-    font-size: 1.25rem;
-}
-
-h6 {
-    font-size: 1.125rem;
 }
 
 p {
