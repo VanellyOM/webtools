@@ -1,4 +1,11 @@
-
+/* #1b8d67
+    #3c0e4e
+    #f047ff
+    #0e3a4e
+    #410101
+    #4e4d0e
+    #54f8c2
+ */
 @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;700;900&display=swap'); 
 
 .sansita-swashed-example {
@@ -22,7 +29,7 @@ header {
 }
 
 main {
-    padding: 1rem;
+    padding: .5rem;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -31,7 +38,7 @@ footer {
     background: #3c0e4e;
     color: #F2F7FD;
     text-align: center;
-    padding: 1rem 0;
+    padding: .5rem 0;
     margin-top: 1rem;
 }
 
@@ -69,7 +76,7 @@ h4 {
 p {
     margin: 0 0 1rem 0;
     font-size: 1.1rem;
-    color: #410101;
+    color: #0e3a4e;
     line-height: 1.6;
 }
 
@@ -86,15 +93,16 @@ a:active {
     color: rgb(25, 0, 139);
 }
 
-.nav-link:link,
-.nav-link:visited {
-    color: #c307fc;
+footer a:link,
+footer a:visited {
+    color: #54f8b9;
 }
 
-.nav-link:hover {
-    color: #b1f8c1;
+footer a:hover {
+    color: #f047ff;
 }
 
-.nav-link:active {
+footer a:active {
     color: #f1ddf7;
 }
+
