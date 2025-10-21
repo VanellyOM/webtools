@@ -1,0 +1,198 @@
+/* === Global Box Model === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* === Body === */
+body {
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: #0e3a4e;
+  font-family: "Sansita Swashed", system-ui, sans-serif;
+}
+
+/* === Fixed Top Navigation === */
+nav {
+  background-color: #3c0e4e;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  text-align: center;
+  padding: 0.75rem 0;
+}
+
+nav a {
+  color: #54f8c2;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f047ff;
+}
+
+/* === Header & Logo (Horizontal Layout) === */
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 4rem; /* below fixed nav */
+  margin-bottom: 1rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  color: #0e3a4e;
+  margin: 0;
+}
+
+.logo {
+  height: 70px;
+  width: auto;
+}
+
+/* === Sidebar (Sticky Quick Links on Right) === */
+.sidebar {
+  float: right;
+  width: 18%;
+  max-width: 200px;
+  background-color: #ffffff;
+  padding: 0.75rem;
+  margin: 8rem 1rem 2rem 0.5rem; /* tightened margins */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 6rem;
+  text-align: left;
+  z-index: 5;
+}
+
+.sidebar h3 {
+  text-align: center;
+  color: #7a03a8;
+  margin-bottom: 0.75rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin: 0.5rem 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #1b8d67;
+  font-weight: 500;
+}
+
+.sidebar a:hover {
+  color: #4e4d0e;
+}
+
+/* === Main Content === */
+main.content {
+    float: left;
+    width: 76%; /* widened to nearly reach sidebar */
+    background-color: #fff;
+    padding: 2rem;
+    margin: 4rem 0 3rem 1rem; /* fixed missing semicolon */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  }
+
+/* === Figures and Captions === */
+main.content figure {
+  margin: 1rem auto;
+  text-align: center;
+  max-width: 90%;
+  overflow: hidden; /* contain floated images */
+}
+
+main.content figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+main.content figure figcaption {
+  display: block;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #7a03a8;
+  margin-top: 0.5rem;
+  clear: both; /* ensures caption appears below floated images */
+}
+
+/* === Floated Images for Sections === */
+#about-me figure img,
+#developer-identity figure img,
+#learning-journey figure img {
+  display: block;        /* makes image a block element */
+  margin: 1rem auto;     /* top/bottom 1rem, left/right auto centers */
+  max-width: 60%;        /* adjust size as needed */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Clear floats within sections */
+section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* === Footer === */
+footer {
+  clear: both;
+  background-color: #3c0e4e;
+  color: #f2f7fd;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* === Responsive Design (Mobile) === */
+@media (max-width: 800px) {
+  .sidebar {
+    float: none;
+    width: 90%;
+    margin: 1rem auto;
+    position: relative;
+    top: auto;
+  }
+
+  main.content {
+    float: none;
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .page-header {
+    flex-direction: column;
+  }
+
+  .logo {
+    height: 60px;
+    margin-bottom: 0.5rem;
+  }
+}
+

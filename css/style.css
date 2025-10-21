@@ -23,16 +23,6 @@ body {
     line-height: 1.5;
 }
 
-header {
-    padding: .5rem 0;
-    text-align: center;
-}
-
-main {
-    padding: .5rem;
-    max-width: 800px;
-    margin: 0 auto;
-}
 
 footer {
     background: #3c0e4e;

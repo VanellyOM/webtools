@@ -23,28 +23,36 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css"  />
+    <link rel="stylesheet" href="css/layout.css">
 </head>
-<body>
-<header>
-    <nav style="text-align:center;">
+<body class="homepage">
+    <nav  style="text-align:center;">
         <a href="index.html">Home</a>  |     
         <a href="about-us.html">About</a> | 
         <a href="projects.html">Projects</a> | 
         <a href="contact.html">Contact</a> 
     </nav>
-    <img src="images/NestEggLogo.sm.png" alt="Nest Egg Logo" style="max-width:100%;height:auto;" />
-    <h1>Welcome to My Nest Egg</h1>
-        
-</header>
-
-<main>
+    <header class="page-header">
+        <img src="images/NestEggLogo.sm.png" alt="Nest Egg Logo" class="logo">
+        <h1>Welcome to My Nest Egg</h1>
+      </header>
+      <aside class="sidebar">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#developer-identity">Developer Identity</a></li>
+          <li><a href="#learning-journey">Learning Journey</a></li>
+        </ul>
+      </aside>
+      
+      <main class="content">
     <h2>A Launch Studio Project</h2>
-    <nav> 
+    <nav >
         <a href="#about-me">About Me</a> | 
         <a href="#developer-identity">Developer Identity</a> | 
         <a href="#learning-journey">Learning Journey</a>
-</nav>
+    </nav>
     <section id="about-me">
         <h3>About Me</h3>
         <p>
