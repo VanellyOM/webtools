@@ -1,198 +1,211 @@
-/* === Global Box Model === */
-*,
-*::before,
-*::after {
+ /* =======================================
+   NEST EGG — layout.css
+   Handles structural and responsive layout
+   ======================================= */
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-
-/* === Body === */
+ 
 body {
-  background-color: #f4f4f4;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  background-color: #fafafa;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
-  color: #0e3a4e;
-  font-family: "Sansita Swashed", system-ui, sans-serif;
 }
-
-/* === Fixed Top Navigation === */
-nav {
-  background-color: #3c0e4e;
-  color: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  text-align: center;
-  padding: 0.75rem 0;
-}
-
-nav a {
-  color: #54f8c2;
-  text-decoration: none;
-  margin: 0 1rem;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #f047ff;
-}
-
-/* === Header & Logo (Horizontal Layout) === */
-.page-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 4rem; /* below fixed nav */
-  margin-bottom: 1rem;
-  padding: 1rem 2rem;
-  text-align: center;
-  position: relative;
-}
-
-.page-header h1 {
-  font-size: 2.5rem;
-  color: #0e3a4e;
-  margin: 0;
-}
-
-.logo {
-  height: 70px;
-  width: auto;
-}
-
-/* === Sidebar (Sticky Quick Links on Right) === */
-.sidebar {
-  float: right;
-  width: 18%;
-  max-width: 200px;
+ 
+/* Header and nav */
+header {
   background-color: #ffffff;
-  padding: 0.75rem;
-  margin: 8rem 1rem 2rem 0.5rem; /* tightened margins */
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 6rem;
-  text-align: left;
-  z-index: 5;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
 }
-
-.sidebar h3 {
+ 
+header nav {
   text-align: center;
-  color: #7a03a8;
-  margin-bottom: 0.75rem;
 }
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.sidebar li {
-  margin: 0.5rem 0;
-}
-
-.sidebar a {
+ 
+header nav a {
   text-decoration: none;
-  color: #1b8d67;
+  color: #333;
+  margin: 0 0.5rem;
   font-weight: 500;
 }
-
-.sidebar a:hover {
-  color: #4e4d0e;
+ 
+header nav a:hover {
+  color: #0077cc;
 }
-
-/* === Main Content === */
-main.content {
-    float: left;
-    width: 76%; /* widened to nearly reach sidebar */
-    background-color: #fff;
-    padding: 2rem;
-    margin: 4rem 0 3rem 1rem; /* fixed missing semicolon */
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-    text-align: center;
-  }
-
-/* === Figures and Captions === */
-main.content figure {
-  margin: 1rem auto;
-  text-align: center;
-  max-width: 90%;
-  overflow: hidden; /* contain floated images */
-}
-
-main.content figure img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-main.content figure figcaption {
-  display: block;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #7a03a8;
-  margin-top: 0.5rem;
-  clear: both; /* ensures caption appears below floated images */
-}
-
-/* === Floated Images for Sections === */
-#about-me figure img,
-#developer-identity figure img,
-#learning-journey figure img {
-  display: block;        /* makes image a block element */
-  margin: 1rem auto;     /* top/bottom 1rem, left/right auto centers */
-  max-width: 60%;        /* adjust size as needed */
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Clear floats within sections */
-section::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-/* === Footer === */
+ 
+/* Footer */
 footer {
-  clear: both;
-  background-color: #3c0e4e;
-  color: #f2f7fd;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
   text-align: center;
   padding: 1rem 0;
   margin-top: 2rem;
 }
-
-/* === Responsive Design (Mobile) === */
-@media (max-width: 800px) {
-  .sidebar {
-    float: none;
-    width: 90%;
-    margin: 1rem auto;
-    position: relative;
-    top: auto;
-  }
-
-  main.content {
-    float: none;
-    width: 90%;
-    margin: 1rem auto;
-  }
-
-  .page-header {
-    flex-direction: column;
-  }
-
-  .logo {
-    height: 60px;
-    margin-bottom: 0.5rem;
-  }
+ 
+footer nav a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 0.5rem;
+  font-weight: 500;
+}
+ 
+footer nav a:hover {
+  color: #0077cc;
+}
+ 
+footer p {
+  margin-top: 0.5rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+ 
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+ 
+footer ul li {
+  font-size: 0.9rem;
+}
+ 
+footer ul a {
+  color: #0077cc;
+  text-decoration: none;
+}
+ 
+footer ul a:hover {
+  text-decoration: underline;
+}
+ 
+/* Main content */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+ 
+/* Section headings */
+h1, h2, h3 {
+  color: #111;
+  margin-bottom: 1rem;
+}
+ 
+/* === ABOUT ME SECTION === */
+#about-me {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+ 
+#about-me figure {
+  flex: 1 1 40%;
+  text-align: center;
+  margin: 0;
+}
+ 
+#about-me img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+ 
+#about-me figcaption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+ 
+#about-me p {
+  flex: 1 1 55%;
+  line-height: 1.7;
+}
+ 
+/* === LEARNING JOURNEY SECTION === */
+.learning-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+ 
+.learning-container p {
+  flex: 1 1 60%;
+  line-height: 1.6;
+}
+ 
+.learning-container figure {
+  flex: 1 1 35%;
+  text-align: center;
+  margin: 0;
+}
+ 
+.learning-container img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+ 
+.learning-container figcaption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+ 
+/* === Global Image Rules === */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
+main.content img:last-of-type {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 70%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* === Responsive adjustments === */
+@media (max-width: 768px) {
+  #about-me {
+    flex-direction: column;
+    text-align: center;
+  }
+ 
+  #about-me p,
+  #about-me figure {
+    flex: 1 1 100%;
+  }
+ 
+  .learning-container {
+    flex-direction: column;
+    text-align: center;
+  }
+ 
+  .learning-container p,
+  .learning-container figure {
+    flex: 1 1 100%;
+  }
+ 
+  main {
+    padding: 0 1rem;
+  }
+}
