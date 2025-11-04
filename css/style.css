@@ -1,162 +1,99 @@
-/* =======================================
-   NEST EGG — style.css
-   Handles typography, color, and polish
-   ======================================= */
- 
-/* === COLOR PALETTE ===
-#1b8d67  - Emerald Green (Links / Highlights)
-#3c0e4e  - Deep Purple (Header / Footer Background)
-#f047ff  - Magenta Accent (Hover / Active Elements)
-#0e3a4e  - Navy Blue (Body Text)
-#410101  - Deep Red-Brown (Rare Accent)
-#4e4d0e  - Olive Gold (Subtle Hover / Accent)
-#54f8c2  - Aqua Mint (Navigation / Accent)
-#f4f4f4  - Light Gray (Page Background)
-#ffffff  - White (Content Background)
-#7a03a8  - Violet (Section Headers)
-======================================= */
-/* === style.css === */
+/* #1b8d67
+    #3c0e4e
+    #f047ff
+    #0e3a4e
+    #410101
+    #4e4d0e
+    #54f8c2
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;700;900&display=swap'); 
 
-/* Global typography and color scheme */
-
-:root {
-  --primary-color: #0077cc;
-  --secondary-color: #004f88;
-  --text-color: #222;
-  --bg-color: #fafafa;
-  --light-gray: #eaeaea;
-  --accent-color: #dbeeff;
-  --font-main: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
+ .sansita-swashed-example {
+   font-family: "Sansita Swashed", system-ui, sans-serif;
+   font-weight: 400;
+   font-style: normal;
+ }
  
-body {
-  font-family: var(--font-main);
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  margin: 0;
-  line-height: 1.6;
-}
+ body {
+     font-family:"Sansita Swashed", system-ui, sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color: #f4f4f4;
+     color: rgb(57, 57, 57);
+     line-height: 1.5;
+ }
  
-/* === Headings === */
-
-h1, h2, h3 {
-  color: var(--secondary-color);
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-}
  
-h1 {
-  font-size: 2rem;
-  border-bottom: 2px solid var(--accent-color);
-  display: inline-block;
-  padding-bottom: 0.25rem;
-}
+ footer {
+     background: #3c0e4e;
+     color: #F2F7FD;
+     text-align: center;
+     padding: .5rem 0;
+     margin-top: 1rem;
+ }
  
-h2, h3 {
-  font-size: 1.5rem;
-}
+ footer > p {
+     color:#d4f7df;
+ }
  
-/* === Links === */
-
-a {
-  color: var(--primary-color);
-  text-decoration: none;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
-}
+ h1 {
+     color: #0e3a4e;
+     font-family: "Sansita Swashed", system-ui, sans-serif;
+     font-weight: 800;
+     font-style: normal;
+     font-size: 3rem;
+ }
  
-a:hover,
-a:focus {
-  color: var(--secondary-color);
-  text-shadow: 0 0 2px rgba(0, 119, 204, 0.3);
-}
+ h2, h3, h4{
+     color: #7a03a8;
+     font-family:'Times New Roman', Times, serif;
+     margin-top: 1rem;
+     margin-bottom: 0.5rem;
+ }
  
-/* === Navigation Styling (Header & Footer) === */
-
-header nav a,
-
-footer nav a {
-  font-weight: 500;
-  color: var(--text-color);
-  margin: 0 0.75rem;
-  transition: color 0.3s ease;
-}
-
-header nav a:hover,
-footer nav a:hover {
-  color: var(--primary-color);
-}
+ h2 {
+     font-size: 2rem;
+ }
  
-/* === Paragraphs and Text === */
-
-p {
-  margin-bottom: 1rem;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: #333;
-}
+ h3 {
+     font-size: 1.75rem;
+ }
  
-/* === Section Layout Enhancements === */
-
-section {
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--light-gray);
-}
+ h4 {
+     font-size: 1.5rem;
+ }
  
-/* === Figures and Images === */
-
-figure {
-  margin: 1rem 0;
-  text-align: center;
-}
+ p {
+     margin: 0 0 1rem 0;
+     font-size: 1.1rem;
+     color: #0e3a4e;
+     line-height: 1.6;
+ }
  
-figcaption {
-  font-size: 0.9rem;
-  color: #666;
-}
+ a:link,
+ a:visited {
+     color: #1b8d67;
+ }
  
-/* === Footer details === */
-
-footer {
-  background-color: #fff;
-  border-top: 1px solid #ddd;
-  color: #444;
-}
+ a:hover {
+     color: #4e4d0e;
+ }
  
-footer p {
-  margin-top: 0.5rem;
-  color: #555;
-}
+ a:active {
+     color: rgb(25, 0, 139);
+ }
  
-footer ul li {
-  list-style: none;
-  color: #666;
-}
+ footer a:link,
+ footer a:visited {
+     color: #54f8b9;
+ }
  
-footer ul a {
-  color: var(--primary-color);
-}
+ footer a:hover {
+     color: #f047ff;
+ }
  
-footer ul a:hover {
-  color: var(--secondary-color);
-  text-decoration: underline;
-}
+ footer a:active {
+     color: #f1ddf7;
+ }
  
-/* === Responsive Typography === */
-
-@media (max-width: 768px) {
-
-  h1 {
-    font-size: 1.7rem;
-  }
- 
-  h2, h3 {
-    font-size: 1.3rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-
-}
  
