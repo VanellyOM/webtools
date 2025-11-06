@@ -1,0 +1,76 @@
+/* Product Grid */
+.product-grid {
+    /* 6 columns 3 rows */
+    display: grid;
+    max-width: fit-content;
+    margin: auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    grid-template-areas: 
+        ". featured-product featured-product featured-product featured-product ."
+        "product1 product1 product1 product2 product2 product2"
+        "product3 product3 product4 product4 product5 product5";
+}
+
+/* Featured Product - Row 1 */
+.featured-product {
+    grid-area: featured-product;
+}
+
+/* Product Cards in Row 2 */
+.product1 {
+    grid-area: product1; 
+}
+
+/* Product Cards in Row 3 */
+.product2 {
+    grid-area: product2; 
+}
+
+.product3 {
+    grid-area: product3; 
+}
+
+.product4 {
+    grid-area: product4; 
+}
+
+.product5 {
+    grid-area: product5;
+}
+
+
+/* Product Card */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s ease-in-out;
+    /* Flexbox for horizontal structure */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensure the card takes up available height */
+}
+
+
+.product-image {
+    width: 50%;
+    height: auto;
+}
+
+.product-details {
+    padding: 15px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.product-name {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #333;
+}
