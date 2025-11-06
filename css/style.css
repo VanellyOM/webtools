@@ -1,18 +1,4 @@
-/* #1b8d67
-    #3c0e4e
-    #f047ff
-    #0e3a4e
-    #410101
-    #4e4d0e
-    #54f8c2
- */
- @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;700;900&display=swap'); 
 
- .sansita-swashed-example {
-   font-family: "Sansita Swashed", system-ui, sans-serif;
-   font-weight: 400;
-   font-style: normal;
- }
  
  body {
      font-family:"Sansita Swashed", system-ui, sans-serif;
@@ -95,5 +81,87 @@
  footer a:active {
      color: #f1ddf7;
  }
- 
- 
+
+ header, footer {
+
+     text-align: center;
+
+     padding: 1rem;
+
+     background: #eee;
+
+ }
+
+ main {
+
+     max-width: 600px;
+
+     margin: 2rem auto;
+
+     text-align: center;
+
+ }
+
+ form {
+
+     margin: 2rem auto;
+
+     padding: 1rem;
+
+     background: #fff;
+
+     border-radius: 10px;
+
+     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+     width: 100%;
+
+     max-width: 400px;
+
+ }
+
+ label {
+
+     display: block;
+
+     margin: 0.5rem 0 0.2rem;
+
+     text-align: left;
+
+ }
+
+ input {
+
+     width: 100%;
+
+     padding: 0.5rem;
+
+     border: 1px solid #aaa;
+
+     border-radius: 5px;
+
+ }
+
+ button {
+
+     margin-top: 1rem;
+
+     padding: 0.6rem 1.5rem;
+
+     background: #222;
+
+     color: #fff;
+
+     border: none;
+
+     border-radius: 5px;
+
+     cursor: pointer;
+
+ }
+
+ button:hover {
+
+     background: #444;
+
+ }

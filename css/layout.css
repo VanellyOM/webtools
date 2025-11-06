@@ -40,7 +40,7 @@ nav a:hover {
 }
 
 /* === Header & Logo (Horizontal Layout) === */
-.page-header {
+header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,15 +52,19 @@ nav a:hover {
   position: relative;
 }
 
-.page-header h1 {
+header h1 {
   font-size: 2.5rem;
   color: #0e3a4e;
   margin: 0;
 }
 
 .logo {
-  height: 70px;
+  height: 60px;
   width: auto;
+  margin-bottom: 0.5rem;
+  position: absolute;
+  top: 100px;
+  left: 100 px;
 }
 
 /* === Sidebar (Sticky Quick Links on Right) === */
@@ -107,11 +111,10 @@ nav a:hover {
 
 /* === Main Content === */
 main.content {
-    float: left;
     width: 76%; /* widened to nearly reach sidebar */
     background-color: #fff;
     padding: 2rem;
-    margin: 4rem 0 3rem 1rem; /* fixed missing semicolon */
+    margin: 4rem auto; /* fixed missing semicolon */
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
     text-align: left;
@@ -120,7 +123,7 @@ main.content {
 /* === Figures and Captions === */
 main.content figure {
   margin: 1rem auto;
-  text-align: center;
+  text-align: left;
   max-width: 90%;
   overflow: hidden; /* contain floated images */
 }
@@ -134,7 +137,7 @@ main.content figure img {
 
 main.content figure figcaption {
   display: block;
-  text-align: center;
+  text-align: left;
   font-size: 0.9rem;
   color: #7a03a8;
   margin-top: 0.5rem;
@@ -186,13 +189,9 @@ footer {
     margin: 1rem auto;
   }
 
-  .page-header {
-    flex-direction: column;
+  .header {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 3rem;
   }
-
-  .logo {
-    height: 60px;
-    margin-bottom: 0.5rem;
-  }
-}
-
+} 
