@@ -1,6 +1,6 @@
 # My Webtools Class Project
 
-My Project include HTML and CSS.
+My Project includes HTML CSS and w3.CSS.
 
 
 

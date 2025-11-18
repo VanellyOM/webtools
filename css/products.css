@@ -45,10 +45,10 @@
 /* Product Card */
 .product-card {
     background-color: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid #ffffff;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 2px rgba(168, 37, 207, 0.4);
     transition: transform 0.2s, box-shadow 0.2s ease-in-out;
     /* Flexbox for horizontal structure */
     display: flex;

@@ -1,20 +1,4 @@
 
-/* #1b8d67
-    #3c0e4e
-    #f047ff
-    #0e3a4e
-    #410101
-    #4e4d0e
-    #54f8c2
- */
- @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;700;900&display=swap'); 
-
- .sansita-swashed-example {
-   font-family: "Sansita Swashed", system-ui, sans-serif;
-   font-weight: 400;
-   font-style: normal;
- }
-
 /* Team css */
 * {
     margin: 0;
@@ -22,11 +6,6 @@
     box-sizing: border-box;
   }
   
-  html,
-  body {
-      font-family: "Sansita Swashed", system-ui, sans-serif;
-      line-height: 1.5;
-  }
   
   main {
       margin: 0 auto;
