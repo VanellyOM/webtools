@@ -1,14 +1,14 @@
 
 /* Team css */
 * {
-    margin: 0;
-    padding: 0;
+    margin: 1;
+    padding: 1;
     box-sizing: border-box;
   }
   
   
   main {
-      margin: 0 auto;
+      margin: 1 auto;
       padding: 0 10%;
       max-width: 1600px;
   }

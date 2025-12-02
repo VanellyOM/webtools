@@ -8,14 +8,14 @@
 /* === Body === */
 body {
   background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
+  margin: 1 auto;
+  padding: 1;
   min-height: 100vh;
   color: #0e3a4e;
   font-family: "Sansita Swashed", system-ui, sans-serif;
 }
 
-/* === Fixed Top Navigation === */
+
 nav {
   background-color: #3c0e4e;
   color: white;
@@ -25,13 +25,13 @@ nav {
   width: 100%;
   z-index: 100;
   text-align: center;
-  padding: 0.75rem 0;
+  padding: .75 rem 0;
 }
 
 nav a {
   color: #54f8c2;
   text-decoration: none;
-  margin: 0 1rem;
+  margin: 1 1rem;
   font-weight: bold;
 }
 
@@ -44,12 +44,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  margin-top: 4rem; /* below fixed nav */
+  gap: 2rem;
+  margin-top: 4rem; 
   margin-bottom: 1rem;
   padding: 1rem 2rem;
   text-align: center;
-  position: relative;
 }
 
 header h1 {
@@ -140,7 +139,7 @@ main.content figure figcaption {
   text-align: left;
   font-size: 0.9rem;
   color: #7a03a8;
-  margin-top: 0.5rem;
+  margin-top: 1 rem;
   clear: both; /* ensures caption appears below floated images */
 }
 
