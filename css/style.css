@@ -1,5 +1,13 @@
-
+/* stye
+#f4f4f4
+#3c0e4e
+#7a03a8
+*/
  
+.caption-text {
+    font-family: "Edwardian Script ITC", "apple Chancery", cursive;
+}
+
  body {
      font-family:"Sansita Swashed", system-ui, sans-serif;
      margin: 1  1 1 1;
@@ -19,7 +27,7 @@
  }
  
  footer > p {
-     color:#d4f7df;
+     color:#F2F7FD;
  }
  
  h1 {
@@ -58,7 +66,7 @@
  
  a:link,
  a:visited {
-     color: #1b8d67;
+     color: #7fffd4;
  }
  
  a:hover {
@@ -75,11 +83,11 @@
  }
  
  footer a:hover {
-     color: #f047ff;
+     color: #f478ff;
  }
  
  footer a:active {
-     color: #f1ddf7;
+     color: #ffffff;
  }
 
  header, footer {
@@ -88,7 +96,7 @@
 
      padding: 1rem;
 
-     background: #eee;
+     background: #ffffff;
 
  }
 
